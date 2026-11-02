@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "exam": "Salesforce Certified Marketing Cloud Engagement Administrator",
+  "sections": [
+    { "id": "setup", "name": "Setup", "weight": 38, "icon": "⚙️" },
+    { "id": "data-management", "name": "Data Management", "weight": 18, "icon": "🗄️" },
+    { "id": "channel-management", "name": "Channel Management", "weight": 16, "icon": "📨" },
+    { "id": "maintenance", "name": "Maintenance", "weight": 15, "icon": "🛠️" },
+    { "id": "digital-marketing-proficiency", "name": "Digital Marketing Proficiency", "weight": 13, "icon": "🛡️" }
+  ],
+  "mockExam": {
+    "questions": 30,
+    "secondsPerQuestion": 90,
+    "_comment": "Ustawienia próbnego egzaminu w apce (nie oficjalny format egzaminu). Liczba pytań = min(questions, dostępne pytania)."
+  },
+  "lessonPassPercent": 80,
+  "quickQuizSize": 10
+}

@@ -1,0 +1,2344 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "q-canspam-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "can-spam",
+      "type": "multi",
+      "question": "Which TWO requirements of the CAN-SPAM Act apply to commercial emails? (Choose 2)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Include the sender's valid physical mailing address"
+        },
+        {
+          "id": "B",
+          "text": "Require recipients to log in to unsubscribe"
+        },
+        {
+          "id": "C",
+          "text": "Keep the opt-out mechanism working for at least 30 days after the send"
+        },
+        {
+          "id": "D",
+          "text": "Use double opt-in for all subscribers"
+        }
+      ],
+      "correct": [
+        "A",
+        "C"
+      ],
+      "explanation": "Adres fizyczny i opt-out działający min. 30 dni po wysyłce to wymogi ustawy. Wymóg logowania przy wypisie narusza CAN-SPAM, a double opt-in to best practice, nie wymóg ustawy.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-canspam-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "can-spam",
+      "type": "scenario",
+      "question": "Northern Trails Outfitter's unsubscribe process requires subscribers to log in to their customer account and then complete three pages of preference questions. The legal team flags this as a CAN-SPAM risk. What should the administrator do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep the process, because an unsubscribe link is present in every email"
+        },
+        {
+          "id": "B",
+          "text": "Replace it with an opt-out that requires no login and takes at most one page"
+        },
+        {
+          "id": "C",
+          "text": "Add the company's physical mailing address to the email footer"
+        },
+        {
+          "id": "D",
+          "text": "Switch all new subscriptions to double opt-in"
+        }
+      ],
+      "correct": "B",
+      "explanation": "CAN-SPAM wymaga łatwego opt-out: bez logowania, maksymalnie 1 strona. Adres fizyczny i double opt-in nie naprawiają złego procesu wypisu.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-canspam-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "can-spam",
+      "type": "single",
+      "question": "Under the CAN-SPAM Act, within what time frame must a subscriber's opt-out request be honored?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 days"
+        },
+        {
+          "id": "B",
+          "text": "10 business days"
+        },
+        {
+          "id": "C",
+          "text": "30 days"
+        },
+        {
+          "id": "D",
+          "text": "6 months"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Wypis realizujesz w ciągu 10 dni (w ustawie: dni robocze). 30 dni to minimalny czas działania linku opt-out po wysyłce, a nie termin realizacji wypisu.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-canspam-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "can-spam",
+      "type": "scenario",
+      "question": "An internal audit finds that commercial emails sent from Marketing Cloud Engagement do not include the sender's physical mailing address. Where should the administrator configure the footer that contains the address?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Delivery Profile"
+        },
+        {
+          "id": "B",
+          "text": "Key Management"
+        },
+        {
+          "id": "C",
+          "text": "Login IP Allowlist"
+        },
+        {
+          "id": "D",
+          "text": "Data View _Complaint"
+        }
+      ],
+      "correct": "A",
+      "explanation": "W SFMC stopka i adres fizyczny nadawcy są w Delivery Profile. Pozostałe opcje dotyczą kluczy, bezpieczeństwa logowania i skarg.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-canspam-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "can-spam",
+      "type": "truefalse",
+      "question": "Governance means complying with laws such as the CAN-SPAM Act, while compliance means following a company's internal marketing rules.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "F",
+      "explanation": "Jest odwrotnie: governance to wewnętrzne zasady prowadzenia marketingu, a compliance to przestrzeganie prawa (np. CAN-SPAM).",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-canspam-06",
+      "section": "digital-marketing-proficiency",
+      "topic": "can-spam",
+      "type": "truefalse",
+      "question": "Under the CAN-SPAM Act, the subject line of a commercial email must reflect the content of the message.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "T",
+      "explanation": "Subject line musi odpowiadać treści maila. To jeden z wymogów CAN-SPAM dla commercial email, obok uczciwego headera, adresu fizycznego i opt-out.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-trans-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "commercial-vs-transactional",
+      "type": "single",
+      "question": "Which CAN-SPAM requirement also applies to transactional emails, such as order confirmations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Accurate sender identification in the header"
+        },
+        {
+          "id": "B",
+          "text": "A valid physical mailing address"
+        },
+        {
+          "id": "C",
+          "text": "A working opt-out mechanism"
+        },
+        {
+          "id": "D",
+          "text": "A subject line that matches the content"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Transactional email jest zwolniony z większości CAN-SPAM. Zostaje tylko accurate sender identification, bez wymogu unsubscribe i adresu fizycznego.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-trans-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "commercial-vs-transactional",
+      "type": "scenario",
+      "question": "Cloud Kicks sends a weekly promotional newsletter and password reset emails. The legal team asks which emails must contain an unsubscribe link and the physical mailing address to meet CAN-SPAM. What should the administrator answer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both the newsletter and the password reset emails"
+        },
+        {
+          "id": "B",
+          "text": "Only the newsletter; the password reset email needs accurate sender identification"
+        },
+        {
+          "id": "C",
+          "text": "Only the password reset emails"
+        },
+        {
+          "id": "D",
+          "text": "Neither, as long as subscribers used double opt-in"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Newsletter to commercial email, więc wymaga opt-out i adresu fizycznego. Reset hasła to transactional email, któremu zostaje tylko uczciwa identyfikacja nadawcy.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-trans-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "commercial-vs-transactional",
+      "type": "truefalse",
+      "question": "Transactional emails are exempt from all CAN-SPAM requirements.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "F",
+      "explanation": "Nie ze wszystkich: maile transakcyjne nadal muszą mieć accurate sender identification (uczciwy header).",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-optin-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "opt-in",
+      "type": "scenario",
+      "question": "The marketing team purchased a list of 50,000 contacts from a partner and wants to include them in next week's promotional campaign. What should the administrator recommend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Send the campaign, because the partner collected consent"
+        },
+        {
+          "id": "B",
+          "text": "Do not send to the list; send only to subscribers who gave explicit opt-in"
+        },
+        {
+          "id": "C",
+          "text": "Import the list and mark all contacts as opted in"
+        },
+        {
+          "id": "D",
+          "text": "Send to the list from a shared IP to protect the company's reputation"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Kupiona lub wynajęta lista to nie jest explicit opt-in. Nie wysyłasz do niej, bo rośnie ryzyko trafienia w honeypot spam traps.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-optin-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "opt-in",
+      "type": "scenario",
+      "question": "A web designer builds a newsletter signup form where the marketing consent checkbox is checked by default. The marketing manager asks the administrator whether this is a valid opt-in. What should the administrator say?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It is valid, because the visitor can uncheck the box"
+        },
+        {
+          "id": "B",
+          "text": "It is not a valid explicit opt-in; the checkbox must not be pre-checked"
+        },
+        {
+          "id": "C",
+          "text": "It is valid only for transactional emails"
+        },
+        {
+          "id": "D",
+          "text": "It is valid if the company uses a dedicated IP"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Explicit opt-in to świadoma zgoda klienta. Checkbox zgody domyślnie zaznaczony (pre-checked) to zła praktyka, a nie prawidłowy opt-in.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-optin-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "opt-in",
+      "type": "multi",
+      "question": "Which THREE are benefits of Confirmed (Double) Opt-In? (Choose 3)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verifies that the subscriber owns the email address"
+        },
+        {
+          "id": "B",
+          "text": "Blocks bot signups"
+        },
+        {
+          "id": "C",
+          "text": "Increases engagement and ROI"
+        },
+        {
+          "id": "D",
+          "text": "Exempts emails from CAN-SPAM requirements"
+        },
+        {
+          "id": "E",
+          "text": "Removes the need to warm a new IP"
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "COI weryfikuje właściciela adresu, czyści bazę, podnosi engagement i ROI oraz blokuje boty. Nie zwalnia z CAN-SPAM i nie zastępuje warmingu.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-optin-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "opt-in",
+      "type": "truefalse",
+      "question": "In a double opt-in process, a subscriber is added to the sending list only after clicking the link in the confirmation email.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "T",
+      "explanation": "Proces: klient wypełnia formularz, dostaje maila z prośbą o potwierdzenie i dopiero po kliknięciu trafia na listę wysyłkową.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-trap-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "spam-traps",
+      "type": "scenario",
+      "question": "After a re-engagement campaign to subscribers who have not been emailed for over a year, the company's spam trap hits increase sharply. What is the most likely cause?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Honeypot spam traps from a purchased list"
+        },
+        {
+          "id": "B",
+          "text": "Recycled spam traps caused by poor list hygiene"
+        },
+        {
+          "id": "C",
+          "text": "The emails were sent at the wrong time of day"
+        },
+        {
+          "id": "D",
+          "text": "The Session Timeout is set too long"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Wysyłka do starej, uśpionej bazy trafia w recycled traps, czyli porzucone adresy, które po 6–12 mies. nieaktywności stały się pułapkami. To znak złej list hygiene.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-trap-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "spam-traps",
+      "type": "scenario",
+      "question": "Right after the first send to contacts imported from a newly acquired list, the deliverability report shows hits on spam trap addresses that never belonged to a real person. Which type of spam trap was hit, and what does it indicate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Recycled trap; the list was not cleaned regularly"
+        },
+        {
+          "id": "B",
+          "text": "Honeypot; the list was purchased or scraped"
+        },
+        {
+          "id": "C",
+          "text": "Recycled trap; the list was purchased"
+        },
+        {
+          "id": "D",
+          "text": "Honeypot; the subscribers used double opt-in"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Honeypot nigdy nie należał do człowieka: istnieje tylko po to, by łapać spamerów. Trafienie oznacza kupioną albo zescrapowaną listę.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-trap-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "spam-traps",
+      "type": "match",
+      "question": "Match each term with its description.",
+      "options": {
+        "left": [
+          {
+            "id": "1",
+            "text": "Honeypot"
+          },
+          {
+            "id": "2",
+            "text": "Recycled trap"
+          },
+          {
+            "id": "3",
+            "text": "Explicit opt-in"
+          },
+          {
+            "id": "4",
+            "text": "List hygiene"
+          }
+        ],
+        "right": [
+          {
+            "id": "a",
+            "text": "Never belonged to a person; reveals a purchased or scraped list"
+          },
+          {
+            "id": "b",
+            "text": "Real address abandoned for 6–12 months; reveals no list cleaning"
+          },
+          {
+            "id": "c",
+            "text": "Remedy for honeypots: never use purchased lists"
+          },
+          {
+            "id": "d",
+            "text": "Remedy for recycled traps: remove inactive addresses"
+          }
+        ]
+      },
+      "correct": {
+        "1": "a",
+        "2": "b",
+        "3": "c",
+        "4": "d"
+      },
+      "explanation": "Honeypot = kupiona/zescrapowana lista, lekarstwo to explicit opt-in. Recycled = brak czyszczenia listy, lekarstwo to list hygiene.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-trap-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "spam-traps",
+      "type": "truefalse",
+      "question": "A recycled spam trap is an address that was created solely to catch spammers.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "F",
+      "explanation": "Ten opis pasuje do honeypota. Recycled trap to prawdziwy adres porzucony na 6–12 mies., który wrócił jako pułapka.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-hyg-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "list-hygiene",
+      "type": "single",
+      "question": "Where can an administrator find which subscribers marked an email as spam?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The _Complaint data view, queried with SQL in a Query Activity"
+        },
+        {
+          "id": "B",
+          "text": "The Audit Trail"
+        },
+        {
+          "id": "C",
+          "text": "The Login IP Allowlist access log"
+        },
+        {
+          "id": "D",
+          "text": "Key Management"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Skargi na spam są w Data View _Complaint, którą odpytujesz SQL-em w Query Activity. Audit Trail loguje dostępy i zmiany w koncie, nie skargi.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-hyg-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "list-hygiene",
+      "type": "scenario",
+      "question": "After a reactivation campaign to a database last emailed three years ago, a major mailbox provider starts rejecting the company's emails and spam complaints rise to 0.4%. What should the administrator do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increase sending volume to rebuild sending history quickly"
+        },
+        {
+          "id": "B",
+          "text": "Check _Complaint and unsubscribe complainers, remove stale data, and resume sending to the most engaged subscribers"
+        },
+        {
+          "id": "C",
+          "text": "Replace the old database with a purchased list of fresh addresses"
+        },
+        {
+          "id": "D",
+          "text": "Enable Multi-Factor Authentication for all users"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Skargi 0,4% to 4× powyżej progu 0,1%, a stara baza zawiera recycled traps. Wypisz skarżących się, usuń stale data i wróć do wysyłek od najbardziej zaangażowanych, jak przy warmingu.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-hyg-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "list-hygiene",
+      "type": "multi",
+      "question": "A subscriber filed a spam complaint, which the administrator confirmed in the _Complaint data view. Which TWO actions are appropriate? (Choose 2)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Unsubscribe the subscriber from the list or from all lists"
+        },
+        {
+          "id": "B",
+          "text": "Mark the subscriber as Do Not Email"
+        },
+        {
+          "id": "C",
+          "text": "Send the subscriber a re-engagement campaign"
+        },
+        {
+          "id": "D",
+          "text": "Move the subscriber to a dedicated IP send"
+        }
+      ],
+      "correct": [
+        "A",
+        "B"
+      ],
+      "explanation": "Osobę skarżącą się wypisujesz z listy lub ze wszystkich list, oznaczasz Do Not Email albo usuwasz rekord. Dalsze wysyłki do niej zwiększają liczbę skarg.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-hyg-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "list-hygiene",
+      "type": "match",
+      "question": "Match each number with what it describes.",
+      "options": {
+        "left": [
+          {
+            "id": "1",
+            "text": "< 2%"
+          },
+          {
+            "id": "2",
+            "text": "≤ 0.1%"
+          },
+          {
+            "id": "3",
+            "text": "2× per year"
+          },
+          {
+            "id": "4",
+            "text": "Every 3–6 months"
+          }
+        ],
+        "right": [
+          {
+            "id": "a",
+            "text": "Target bounce rate"
+          },
+          {
+            "id": "b",
+            "text": "Target spam complaint rate"
+          },
+          {
+            "id": "c",
+            "text": "Minimum frequency of removing stale data"
+          },
+          {
+            "id": "d",
+            "text": "Review of deliverability metrics"
+          }
+        ]
+      },
+      "correct": {
+        "1": "a",
+        "2": "b",
+        "3": "c",
+        "4": "d"
+      },
+      "explanation": "Bounce < 2%, spam complaints ≤ 0,1%, usuwanie stale data min. 2× w roku, przegląd metryk dostarczalności co 3–6 mies.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-hyg-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "list-hygiene",
+      "type": "single",
+      "question": "According to list hygiene best practice, which subscriber record is considered stale data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A record older than 2 years with no engagement for the last 6 months"
+        },
+        {
+          "id": "B",
+          "text": "A record created within the last 30 days"
+        },
+        {
+          "id": "C",
+          "text": "A record that opened an email last week"
+        },
+        {
+          "id": "D",
+          "text": "A record that confirmed a double opt-in"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Stale = rekord starszy niż 2 lata i bez zaangażowania od 6 mies. Takie dane usuwasz min. 2× w roku.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-hyg-06",
+      "section": "digital-marketing-proficiency",
+      "topic": "list-hygiene",
+      "type": "scenario",
+      "question": "A marketing manager wants to improve engagement and reduce negative reactions by delivering each email at the hour each subscriber is most likely to engage. Which feature should the administrator recommend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Einstein Send Time Optimization"
+        },
+        {
+          "id": "B",
+          "text": "Tokenized Sending"
+        },
+        {
+          "id": "C",
+          "text": "Dedicated IP"
+        },
+        {
+          "id": "D",
+          "text": "Session Timeout"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Einstein Send Time Optimization to AI, które wybiera najlepszą godzinę wysyłki dla każdego odbiorcy. Poprawia zaangażowanie i zmniejsza liczbę negatywnych reakcji.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-hyg-07",
+      "section": "digital-marketing-proficiency",
+      "topic": "list-hygiene",
+      "type": "truefalse",
+      "question": "Hard bounces should be removed from the list immediately.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "T",
+      "explanation": "Hard bounce usuwasz natychmiast. Docelowy bounce rate to poniżej 2%.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-ip-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "shared-vs-dedicated-ip",
+      "type": "scenario",
+      "question": "A retailer sends a very high volume of email and wants full control over its sender reputation. What should the administrator recommend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Request a dedicated IP through the account executive"
+        },
+        {
+          "id": "B",
+          "text": "Keep sending from a shared IP"
+        },
+        {
+          "id": "C",
+          "text": "Enable Einstein Send Time Optimization"
+        },
+        {
+          "id": "D",
+          "text": "Configure the Export Email Allowlist"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Dedicated IP jest dla bardzo dużego wolumenu i daje pełną kontrolę nad reputacją. Zamawiasz je przez account executive.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-ip-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "shared-vs-dedicated-ip",
+      "type": "truefalse",
+      "question": "A dedicated IP does not need to be warmed, because its reputation belongs only to the sender.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "F",
+      "explanation": "Warming jest wymagany zarówno dla shared, jak i dla dedicated IP. Nowe dedicated IP to wręcz typowy powód warmingu.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-ip-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "shared-vs-dedicated-ip",
+      "type": "single",
+      "question": "What is a risk of poor sending practices on a shared IP?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It harms other Salesforce customers on the same IP, and Salesforce may suspend the account"
+        },
+        {
+          "id": "B",
+          "text": "It affects only the sender's own reputation"
+        },
+        {
+          "id": "C",
+          "text": "The IP is automatically converted to a dedicated IP"
+        },
+        {
+          "id": "D",
+          "text": "The emails become exempt from CAN-SPAM"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Na shared IP reputacja jest wspólna z innymi klientami Salesforce. Złe wysyłki szkodzą innym, a Salesforce może zawiesić konto.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-warm-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "warming",
+      "type": "scenario",
+      "question": "During IP warming, the company notices that a major mailbox provider has started throttling its sends. What should the administrator do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Send to the full audience to finish warming faster"
+        },
+        {
+          "id": "B",
+          "text": "Switch to a purchased list with fresh addresses"
+        },
+        {
+          "id": "C",
+          "text": "Pause at the current volume and resume when metrics stabilize"
+        },
+        {
+          "id": "D",
+          "text": "Double the daily volume to establish history"
+        }
+      ],
+      "correct": "C",
+      "explanation": "Przy throttlingu, spadku zaangażowania albo blokadach zatrzymujesz się na obecnym wolumenie. Nie zwiększasz go i wznawiasz po stabilizacji metryk.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-warm-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "warming",
+      "type": "scenario",
+      "question": "A company is migrating to Marketing Cloud Engagement from another ESP and wants to send its first campaign to all 2 million subscribers on day one. What should the administrator recommend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Send to all 2 million subscribers at once to establish volume"
+        },
+        {
+          "id": "B",
+          "text": "Warm up first: start with the most engaged subscribers and increase volume by about 20% per day"
+        },
+        {
+          "id": "C",
+          "text": "Start with subscribers who have been inactive the longest"
+        },
+        {
+          "id": "D",
+          "text": "Add a purchased list to reach full volume faster"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Nowe ESP wymaga warmingu. Zaczynasz od najbardziej zaangażowanych (nowe zapisy i kliknięcia z ostatnich 30 dni) i dokładasz ok. 20% dziennie.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-warm-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "warming",
+      "type": "single",
+      "question": "By approximately how much should daily send volume be increased during IP or domain warming?",
+      "options": [
+        {
+          "id": "A",
+          "text": "About 5% per day"
+        },
+        {
+          "id": "B",
+          "text": "About 20% per day"
+        },
+        {
+          "id": "C",
+          "text": "About 50% per day"
+        },
+        {
+          "id": "D",
+          "text": "About 100% per day"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Tempo warmingu to ok. +20% wolumenu dziennie. Przy ~70% bazy dziennie przechodzisz na pełną bazę.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-warm-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "warming",
+      "type": "multi",
+      "question": "An administrator is building the first audience for warming a new dedicated IP. Which TWO groups should be included first? (Choose 2)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Subscribers who signed up in the last 30 days"
+        },
+        {
+          "id": "B",
+          "text": "Subscribers who clicked an email in the last 30 days"
+        },
+        {
+          "id": "C",
+          "text": "Subscribers with no engagement in the last 12 months"
+        },
+        {
+          "id": "D",
+          "text": "Contacts from a rented partner list"
+        }
+      ],
+      "correct": [
+        "A",
+        "B"
+      ],
+      "explanation": "Na start warmingu wybierasz najbardziej zaangażowanych: nowe zapisy i kliknięcia z ostatnich 30 dni. Nieaktywni i listy kupione lub wynajęte niszczą reputację.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-warm-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "warming",
+      "type": "truefalse",
+      "question": "During warming, once daily sends reach about 70% of the database, the sender can move to sending to the full database.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "T",
+      "explanation": "Próg ~70% bazy dziennie oznacza, że można przejść na wysyłki do całej bazy.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-sec-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "security-settings",
+      "type": "scenario",
+      "question": "After the administrator enforced password expiration in Security Settings, a nightly API integration started failing. What should the administrator do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enable Exclude API Users From Password Expiration"
+        },
+        {
+          "id": "B",
+          "text": "Disable Multi-Factor Authentication"
+        },
+        {
+          "id": "C",
+          "text": "Increase the Session Timeout"
+        },
+        {
+          "id": "D",
+          "text": "Add the integration's address to the Export Email Allowlist"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Opcje Exclude API Users / Exclude FTP Users From Password Expiration chronią integracje przed wygasaniem haseł.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-sec-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "security-settings",
+      "type": "single",
+      "question": "What is the recommended Session Timeout setting?",
+      "options": [
+        {
+          "id": "A",
+          "text": "15 minutes"
+        },
+        {
+          "id": "B",
+          "text": "20 minutes"
+        },
+        {
+          "id": "C",
+          "text": "1 hour"
+        },
+        {
+          "id": "D",
+          "text": "8 hours"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Session Timeout można ustawić od 15 min do 8 h, a zalecana wartość to 20 min.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-sec-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "security-settings",
+      "type": "scenario",
+      "question": "The security team detects repeated password-guessing attempts against Marketing Cloud Engagement user accounts. Which setting directly blocks an account after too many wrong passwords?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Invalid Logins Before Lockout"
+        },
+        {
+          "id": "B",
+          "text": "Export Email Allowlist"
+        },
+        {
+          "id": "C",
+          "text": "Session Timeout"
+        },
+        {
+          "id": "D",
+          "text": "Tokenized Sending"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Invalid Logins Before Lockout blokuje konto po X błędnych hasłach i chroni przed brute force. Na zgadywanie haseł najlepiej działa lockout razem z MFA.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-sec-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "security-settings",
+      "type": "scenario",
+      "question": "Marketing users often work on shared computers in an open office and leave Marketing Cloud Engagement open when they walk away. Which setting addresses this risk?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Session Timeout"
+        },
+        {
+          "id": "B",
+          "text": "Login IP Allowlist"
+        },
+        {
+          "id": "C",
+          "text": "Export Email Allowlist"
+        },
+        {
+          "id": "D",
+          "text": "Field-Level Encryption"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Session Timeout automatycznie wylogowuje po bezczynności i chroni porzucone sesje na wspólnym komputerze.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-sec-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "security-settings",
+      "type": "multi",
+      "question": "Which TWO settings are part of Password Policies in Security Settings? (Choose 2)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimum Password Length"
+        },
+        {
+          "id": "B",
+          "text": "Enforce Password History"
+        },
+        {
+          "id": "C",
+          "text": "Restrict Logins by IP Address"
+        },
+        {
+          "id": "D",
+          "text": "Require Secure Connections"
+        }
+      ],
+      "correct": [
+        "A",
+        "B"
+      ],
+      "explanation": "Minimum Password Length i Enforce Password History należą do Password Policies. Restrict Logins by IP Address jest w Username and Logins, a Require Secure Connections w Session Settings.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-allow-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "mfa-allowlists",
+      "type": "scenario",
+      "question": "Company policy requires that users can log in to Marketing Cloud Engagement, including through the API, only from the corporate office network. Which feature should the administrator configure?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Login IP Allowlist"
+        },
+        {
+          "id": "B",
+          "text": "Multi-Factor Authentication"
+        },
+        {
+          "id": "C",
+          "text": "Export Email Allowlist"
+        },
+        {
+          "id": "D",
+          "text": "Session Timeout"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Login IP Allowlist pozwala logować się tylko z zakresów IP firmy i dotyczy UI oraz API. MFA to pułapka: dodaje drugi składnik, ale nie ogranicza miejsca logowania.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-allow-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "mfa-allowlists",
+      "type": "scenario",
+      "question": "The security officer is worried that users could export subscriber data to personal mailboxes. Exports must only be delivered to company email addresses. What should the administrator configure?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Export Email Allowlist"
+        },
+        {
+          "id": "B",
+          "text": "Login IP Allowlist"
+        },
+        {
+          "id": "C",
+          "text": "Data at Rest Encryption"
+        },
+        {
+          "id": "D",
+          "text": "Invalid Logins Before Lockout"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Export Email Allowlist kontroluje, dokąd (na jakie maile i domeny) trafiają eksporty, w tym subscriber exports i eksporty z tracking pages. Login IP Allowlist kontroluje tylko, skąd można się logować.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-allow-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "mfa-allowlists",
+      "type": "match",
+      "question": "Match each threat with the security setting that addresses it.",
+      "options": {
+        "left": [
+          {
+            "id": "1",
+            "text": "Stolen password (phishing, credential stuffing)"
+          },
+          {
+            "id": "2",
+            "text": "Logins from outside the company, API attacks"
+          },
+          {
+            "id": "3",
+            "text": "Open session on a shared computer"
+          },
+          {
+            "id": "4",
+            "text": "Who changed permissions or settings?"
+          }
+        ],
+        "right": [
+          {
+            "id": "a",
+            "text": "Multi-Factor Authentication"
+          },
+          {
+            "id": "b",
+            "text": "Login IP Allowlist"
+          },
+          {
+            "id": "c",
+            "text": "Session Timeout"
+          },
+          {
+            "id": "d",
+            "text": "Audit Trail"
+          }
+        ]
+      },
+      "correct": {
+        "1": "a",
+        "2": "b",
+        "3": "c",
+        "4": "d"
+      },
+      "explanation": "Wykradzione hasło → MFA, logowanie spoza firmy → Login IP Allowlist, otwarta sesja → Session Timeout, kto co zmienił → Audit Trail.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-allow-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "mfa-allowlists",
+      "type": "single",
+      "question": "Restrict Logins by IP Address is set to Log Violations & Deny Access. What happens when a user tries to log in from an IP address outside the Login IP Allowlist?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Access is denied and the attempt is logged"
+        },
+        {
+          "id": "B",
+          "text": "Access is allowed, but the attempt is logged"
+        },
+        {
+          "id": "C",
+          "text": "The IP address is added to the allowlist automatically"
+        },
+        {
+          "id": "D",
+          "text": "The user's roles are removed"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Logowanie spoza listy kończy się odmową i wpisem w logu. Wpisy sprawdzisz przyciskiem View Access Log.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-allow-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "mfa-allowlists",
+      "type": "truefalse",
+      "question": "The Login IP Allowlist applies only to logins through the user interface; API access is not affected.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "F",
+      "explanation": "Login IP Allowlist dotyczy zarówno UI, jak i API, dlatego chroni też przed malicious API attacks.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-audit-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "audit-trail",
+      "type": "scenario",
+      "question": "A user's permissions were changed last week and nobody admits to making the change. The security team asks the administrator to find out who changed them and when. What should the administrator use?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Audit Trail"
+        },
+        {
+          "id": "B",
+          "text": "Data View _Complaint"
+        },
+        {
+          "id": "C",
+          "text": "Export Email Allowlist"
+        },
+        {
+          "id": "D",
+          "text": "Key Management"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Audit Trail to log dostępów i zmian: logowania, IP, zmiany userów, ról, uprawnień i security settings.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-audit-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "audit-trail",
+      "type": "multi",
+      "question": "Which TWO methods can an administrator use to retrieve Audit Trail data? (Choose 2)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Automation Studio"
+        },
+        {
+          "id": "B",
+          "text": "REST API"
+        },
+        {
+          "id": "C",
+          "text": "Export Email Allowlist"
+        },
+        {
+          "id": "D",
+          "text": "Key Management"
+        }
+      ],
+      "correct": [
+        "A",
+        "B"
+      ],
+      "explanation": "Dane Audit Trail pobierasz przez Automation Studio albo REST API.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-audit-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "audit-trail",
+      "type": "truefalse",
+      "question": "The Audit Trail records changes to security settings, roles, and permissions, as well as user logins and IP addresses.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "T",
+      "explanation": "Audit Trail obejmuje logowania, IP, zmiany userów, ról, uprawnień i security settings.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-role-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "roles-deny",
+      "type": "scenario",
+      "question": "A user was assigned a role that grants access to Automation Studio, but the user still cannot access it. What is the most likely cause?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The user's session timed out"
+        },
+        {
+          "id": "B",
+          "text": "Another role assigned to the user has a Deny permission for Automation Studio"
+        },
+        {
+          "id": "C",
+          "text": "The Login IP Allowlist blocks the user"
+        },
+        {
+          "id": "D",
+          "text": "The user needs all available roles assigned"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Deny wygrywa z każdym Allow, więc inna rola z Deny blokuje dostęp. Dokładanie kolejnych ról tylko tworzy konflikty.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-role-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "roles-deny",
+      "type": "scenario",
+      "question": "To avoid access problems, an administrator assigned every available role to a new marketing user. Several features the user needs have now disappeared. What should the administrator do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Assign one standard Marketing Cloud role and one standard Email Studio role, removing the conflicting roles"
+        },
+        {
+          "id": "B",
+          "text": "Create an additional role that allows the missing features"
+        },
+        {
+          "id": "C",
+          "text": "Increase the Session Timeout for the user"
+        },
+        {
+          "id": "D",
+          "text": "Add the user's IP address to the Login IP Allowlist"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Nadanie wszystkich ról powoduje konflikt, bo któraś z nich ma Deny. Zostaw 1 standardową rolę Marketing Cloud i 1 rolę Email Studio.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-role-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "roles-deny",
+      "type": "truefalse",
+      "question": "An Allow permission in one role overrides a Deny permission for the same feature in another role assigned to the same user.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "F",
+      "explanation": "Jest odwrotnie: Deny wygrywa z każdym Allow. Rozwiązaniem jest usunięcie roli z Deny.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-role-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "roles-deny",
+      "type": "single",
+      "question": "Which standard role assignment is recommended for a Marketing Cloud Engagement user?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One standard Marketing Cloud role and one standard Email Studio role"
+        },
+        {
+          "id": "B",
+          "text": "All available standard roles"
+        },
+        {
+          "id": "C",
+          "text": "Only custom roles with Deny permissions"
+        },
+        {
+          "id": "D",
+          "text": "Two standard Marketing Cloud roles and no Email Studio role"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Zasada 1 + 1: jedna standardowa rola Marketing Cloud i jedna standardowa rola Email Studio na usera.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-enc-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "data-encryption",
+      "type": "scenario",
+      "question": "A financial services company may store customer data in Marketing Cloud Engagement, but its privacy policy requires that selected columns in a Data Extension are encrypted at rest. Which feature meets this requirement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Field-Level Encryption"
+        },
+        {
+          "id": "B",
+          "text": "Tokenized Sending"
+        },
+        {
+          "id": "C",
+          "text": "Export Email Allowlist"
+        },
+        {
+          "id": "D",
+          "text": "Login IP Allowlist"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Dane mogą być w SFMC, ale wybrane kolumny DE mają być zaszyfrowane, więc Field-Level Encryption. Tokenized Sending stosujesz dopiero wtedy, gdy danych w ogóle nie wolno trzymać w SFMC.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-enc-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "data-encryption",
+      "type": "scenario",
+      "question": "The CISO wants the files of the entire Marketing Cloud Engagement database protected by encryption, without any change to how users work with the application. Which option should the administrator recommend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data at Rest Encryption"
+        },
+        {
+          "id": "B",
+          "text": "Field-Level Encryption"
+        },
+        {
+          "id": "C",
+          "text": "AMPscript EncryptSymmetric()"
+        },
+        {
+          "id": "D",
+          "text": "Tokenized Sending"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Data at Rest Encryption szyfruje pliki w systemie plików (I/O) i chroni całą bazę bez zmian w funkcjach aplikacji.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-enc-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "data-encryption",
+      "type": "scenario",
+      "question": "A developer needs to include an encrypted customer identifier in a link inside an email. Which approach should the administrator recommend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "AMPscript EncryptSymmetric() with a key created in Key Management"
+        },
+        {
+          "id": "B",
+          "text": "Data at Rest Encryption"
+        },
+        {
+          "id": "C",
+          "text": "Export Email Allowlist"
+        },
+        {
+          "id": "D",
+          "text": "Session Timeout"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Zaszyfrowaną wartość w mailu, linku albo przy transferze pliku robisz w AMPscript (EncryptSymmetric() / DecryptSymmetric()) z kluczem z Key Management.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-enc-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "data-encryption",
+      "type": "match",
+      "question": "Match each data protection need with the right method.",
+      "options": {
+        "left": [
+          {
+            "id": "1",
+            "text": "Data stays in SFMC, selected DE columns encrypted"
+          },
+          {
+            "id": "2",
+            "text": "Protect files of the whole database, no change for users"
+          },
+          {
+            "id": "3",
+            "text": "PII / PHI must not be stored in SFMC"
+          },
+          {
+            "id": "4",
+            "text": "Encrypted value in an email, link, or file transfer"
+          }
+        ],
+        "right": [
+          {
+            "id": "a",
+            "text": "Field-Level Encryption"
+          },
+          {
+            "id": "b",
+            "text": "Data at Rest Encryption"
+          },
+          {
+            "id": "c",
+            "text": "Tokenized Sending"
+          },
+          {
+            "id": "d",
+            "text": "AMPscript + key"
+          }
+        ]
+      },
+      "correct": {
+        "1": "a",
+        "2": "b",
+        "3": "c",
+        "4": "d"
+      },
+      "explanation": "Kolumny DE → Field-Level, cała baza → Data at Rest, danych nie wolno trzymać w SFMC → Tokenized Sending, wartość w mailu lub pliku → AMPscript + klucz.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-key-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "encryption-keys",
+      "type": "scenario",
+      "question": "A developer builds a custom Journey Builder activity that requires JWT generation. Which key type should be created in Key Management?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SSH"
+        },
+        {
+          "id": "B",
+          "text": "Salt"
+        },
+        {
+          "id": "C",
+          "text": "SSO Metadata"
+        },
+        {
+          "id": "D",
+          "text": "Asymmetric"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Klucz Salt (wartość hex) służy do generowania JWT dla custom Journey Builder activities.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-key-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "encryption-keys",
+      "type": "match",
+      "question": "Match each Key Management key type with its use.",
+      "options": {
+        "left": [
+          {
+            "id": "1",
+            "text": "Salt"
+          },
+          {
+            "id": "2",
+            "text": "SSH"
+          },
+          {
+            "id": "3",
+            "text": "SSO Metadata"
+          },
+          {
+            "id": "4",
+            "text": "Asymmetric"
+          },
+          {
+            "id": "5",
+            "text": "Initialization Vector"
+          }
+        ],
+        "right": [
+          {
+            "id": "a",
+            "text": "JWT for custom Journey Builder activities"
+          },
+          {
+            "id": "b",
+            "text": "SFTP authentication"
+          },
+          {
+            "id": "c",
+            "text": "Single Sign-On"
+          },
+          {
+            "id": "d",
+            "text": "PGP files in a File Transfer Activity"
+          },
+          {
+            "id": "e",
+            "text": "Field-level encryption"
+          }
+        ]
+      },
+      "correct": {
+        "1": "a",
+        "2": "b",
+        "3": "c",
+        "4": "d",
+        "5": "e"
+      },
+      "explanation": "Salt = JWT, SSH = SFTP, SSO Metadata = SSO, Asymmetric = m.in. pliki PGP w File Transfer Activity, IV = field-level encryption.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-key-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "encryption-keys",
+      "type": "multi",
+      "question": "Which TWO key types in Key Management require uploading a certificate? (Choose 2)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Asymmetric"
+        },
+        {
+          "id": "B",
+          "text": "SSH"
+        },
+        {
+          "id": "C",
+          "text": "Symmetric"
+        },
+        {
+          "id": "D",
+          "text": "Salt"
+        }
+      ],
+      "correct": [
+        "A",
+        "B"
+      ],
+      "explanation": "Certyfikat wymagają Asymmetric i SSH. Symmetric wymaga passphrase, a Salt wartości hex.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-key-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "encryption-keys",
+      "type": "scenario",
+      "question": "The administrator is setting up key-based authentication for transferring files to the Marketing Cloud SFTP. Which key type should be created in Key Management?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SSH"
+        },
+        {
+          "id": "B",
+          "text": "Salt"
+        },
+        {
+          "id": "C",
+          "text": "Symmetric"
+        },
+        {
+          "id": "D",
+          "text": "SSO Metadata"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Klucz SSH (upload certyfikatu) służy do uwierzytelniania SFTP.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-key-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "encryption-keys",
+      "type": "single",
+      "question": "Which key type requires a passphrase and is used with AMPscript to encrypt and decrypt values?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Symmetric"
+        },
+        {
+          "id": "B",
+          "text": "Asymmetric"
+        },
+        {
+          "id": "C",
+          "text": "SSH"
+        },
+        {
+          "id": "D",
+          "text": "SSO Metadata"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Symmetric wymaga passphrase i służy do szyfrowania i odszyfrowywania w AMPscript. Asymmetric i SSH wymagają certyfikatu.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-key-06",
+      "section": "digital-marketing-proficiency",
+      "topic": "encryption-keys",
+      "type": "truefalse",
+      "question": "Encryption keys are created and stored in Setup → Data Management → Key Management.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "T",
+      "explanation": "Key Management znajdziesz w Setup → Data Management → Key Management. Tam tworzysz i trzymasz klucze.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-tok-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "tokenized-sending",
+      "type": "scenario",
+      "question": "A healthcare company wants to send appointment reminders from Marketing Cloud Engagement, but its compliance policy prohibits storing patient email addresses outside its own data warehouse. Which feature should the administrator recommend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Field-Level Encryption"
+        },
+        {
+          "id": "B",
+          "text": "Data at Rest Encryption"
+        },
+        {
+          "id": "C",
+          "text": "Tokenized Sending"
+        },
+        {
+          "id": "D",
+          "text": "Export Email Allowlist"
+        }
+      ],
+      "correct": "C",
+      "explanation": "Danych nie wolno przechowywać w SFMC, więc Tokenized Sending. Field-Level Encryption i Data at Rest Encryption nadal trzymają dane w SFMC.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-tok-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "tokenized-sending",
+      "type": "scenario",
+      "question": "A hospital is not allowed to store patient PHI in any external system. A consultant proposes Field-Level Encryption for the patient Data Extension. Why is this proposal insufficient?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The encrypted data would still be stored in Marketing Cloud Engagement"
+        },
+        {
+          "id": "B",
+          "text": "Field-Level Encryption can only be used for transactional emails"
+        },
+        {
+          "id": "C",
+          "text": "Field-Level Encryption requires a dedicated IP"
+        },
+        {
+          "id": "D",
+          "text": "Field-Level Encryption disables the Audit Trail"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Field-Level Encryption szyfruje dane, ale one nadal leżą w SFMC. Gdy danych nie wolno trzymać w SFMC, właściwe jest Tokenized Sending.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-tok-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "tokenized-sending",
+      "type": "truefalse",
+      "question": "With Tokenized Sending, the clear data retrieved from the customer's data warehouse is saved in Marketing Cloud Engagement after the send.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "F",
+      "explanation": "Tokeny są wymieniane na prawdziwe dane (clear data) tylko na czas wysyłki. Mail wychodzi, a dane nie są zapisywane w SFMC.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-tok-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "tokenized-sending",
+      "type": "single",
+      "question": "With Tokenized Sending, what is stored in Marketing Cloud Engagement for each send attribute?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A single token that looks like a regular email address or phone number"
+        },
+        {
+          "id": "B",
+          "text": "An encrypted copy of the real value"
+        },
+        {
+          "id": "C",
+          "text": "The clear data, deleted after 30 days"
+        },
+        {
+          "id": "D",
+          "text": "Nothing; the send attribute is left empty"
+        }
+      ],
+      "correct": "A",
+      "explanation": "W SFMC zapisany jest jeden token na send attribute, który wygląda jak zwykły email albo numer telefonu. Prawdziwe dane SFMC pobiera przez API w chwili wysyłki.",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "q-sv-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "security-values-bu",
+      "type": "match",
+      "question": "Match each Security Settings option with its recommended value.",
+      "options": {
+        "left": [
+          {
+            "id": "1",
+            "text": "Session Timeout"
+          },
+          {
+            "id": "2",
+            "text": "Invalid Logins Before Lockout"
+          },
+          {
+            "id": "3",
+            "text": "Minimum Password Length"
+          },
+          {
+            "id": "4",
+            "text": "User Passwords Expire In"
+          }
+        ],
+        "right": [
+          {
+            "id": "a",
+            "text": "20 minutes"
+          },
+          {
+            "id": "b",
+            "text": "3 attempts"
+          },
+          {
+            "id": "c",
+            "text": "At least 8 characters"
+          },
+          {
+            "id": "d",
+            "text": "90 days"
+          }
+        ]
+      },
+      "correct": {
+        "1": "a",
+        "2": "b",
+        "3": "c",
+        "4": "d"
+      },
+      "explanation": "Zalecane wartości: timeout 20 min, lockout po 3 próbach, hasło min. 8 znaków, wygasanie haseł po 90 dniach.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-sv-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "security-values-bu",
+      "type": "single",
+      "question": "What is the recommended value for Invalid Logins Before Lockout?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 attempt"
+        },
+        {
+          "id": "B",
+          "text": "3 attempts"
+        },
+        {
+          "id": "C",
+          "text": "5 attempts"
+        },
+        {
+          "id": "D",
+          "text": "10 attempts"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Zalecany lockout to 3 błędne próby logowania.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-sv-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "security-values-bu",
+      "type": "scenario",
+      "question": "An administrator created a new child Business Unit, which inherited its security settings from the parent. Last month the administrator changed the Session Timeout in the child BU. Today the parent BU's password policy was tightened, but the child BU still shows the old policy. Why?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Inherited changes take 30 days to propagate"
+        },
+        {
+          "id": "B",
+          "text": "The first change made in the child BU permanently broke inheritance from the parent"
+        },
+        {
+          "id": "C",
+          "text": "Password policies are never inherited, only session settings"
+        },
+        {
+          "id": "D",
+          "text": "The child BU must be added to the Login IP Allowlist"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Nowy BU dziedziczy ustawienia od rodzica, ale pierwsza zmiana w BU zrywa dziedziczenie na zawsze. Od tej chwili zmiany u rodzica nie trafiają do dziecka.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-sv-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "security-values-bu",
+      "type": "truefalse",
+      "question": "A newly created Business Unit inherits its security settings from its parent Business Unit.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "T",
+      "explanation": "Tak: nowy BU dziedziczy ustawienia od rodzica, dopóki nie zmienisz w nim czegoś po raz pierwszy.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-sv-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "security-values-bu",
+      "type": "multi",
+      "question": "An auditor reviews Security Settings. Which TWO configurations meet the recommended values? (Choose 2)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimum Password Length set to 8 characters"
+        },
+        {
+          "id": "B",
+          "text": "Enforce Password History set to 8"
+        },
+        {
+          "id": "C",
+          "text": "Session Timeout set to 8 hours"
+        },
+        {
+          "id": "D",
+          "text": "Invalid Logins Before Lockout set to 10"
+        }
+      ],
+      "correct": [
+        "A",
+        "B"
+      ],
+      "explanation": "Zalecane jest hasło ≥ 8 znaków i history ≥ 8. Timeout ma wynosić 20 min, a lockout następuje po 3 próbach.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-audit-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "audit-trail",
+      "type": "scenario",
+      "question": "The security team asks the administrator to start collecting login and permission-change data in Audit Trail, available to all customers at no extra cost. What must the administrator do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enable Audit Trail with its checkbox"
+        },
+        {
+          "id": "B",
+          "text": "Purchase Advanced Audit Trail through the account executive"
+        },
+        {
+          "id": "C",
+          "text": "Configure the Export Email Allowlist"
+        },
+        {
+          "id": "D",
+          "text": "Query the _Complaint data view"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Basic Audit Trail jest dla wszystkich, ale trzeba go włączyć checkboxem. Advanced kupujesz osobno.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-audit-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "audit-trail",
+      "type": "scenario",
+      "question": "A company must track changes to content and data, including session ID and Business Unit details. Basic Audit Trail is already enabled. What should the administrator recommend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Advanced Audit Trail, purchased through the account executive"
+        },
+        {
+          "id": "B",
+          "text": "Extend basic Audit Trail with a checkbox"
+        },
+        {
+          "id": "C",
+          "text": "Data at Rest Encryption"
+        },
+        {
+          "id": "D",
+          "text": "Einstein Send Time Optimization"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Zmiany treści i danych, session ID i BU daje Advanced Audit Trail. Kupujesz go przez account executive.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-audit-06",
+      "section": "digital-marketing-proficiency",
+      "topic": "audit-trail",
+      "type": "truefalse",
+      "question": "Basic Audit Trail provides 30 days of data and is available to all customers.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "T",
+      "explanation": "Basic Audit Trail: 30 dni, dla wszystkich. Trzeba go tylko włączyć checkboxem.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-enc-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "data-encryption",
+      "type": "single",
+      "question": "Which statement about Data at Rest Encryption is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It uses AES-256 and is transparent to the application"
+        },
+        {
+          "id": "B",
+          "text": "It requires Data Extensions created in Contact Builder"
+        },
+        {
+          "id": "C",
+          "text": "It requires users to change how they work with the application"
+        },
+        {
+          "id": "D",
+          "text": "It replaces stored data with tokens"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Data at Rest Encryption używa AES-256 i jest przezroczysty dla aplikacji. Contact Builder DE to wymóg Field-Level Encryption, a tokeny to Tokenized Sending.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-enc-06",
+      "section": "digital-marketing-proficiency",
+      "topic": "data-encryption",
+      "type": "truefalse",
+      "question": "Data at Rest Encryption also covers Predictive Intelligence and Audience Builder.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "F",
+      "explanation": "Nie: Data at Rest Encryption nie obejmuje Predictive Intelligence i Audience Builder.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-enc-07",
+      "section": "digital-marketing-proficiency",
+      "topic": "data-encryption",
+      "type": "multi",
+      "question": "A company plans to implement Field-Level Encryption. Which THREE requirements apply? (Choose 3)",
+      "options": [
+        {
+          "id": "A",
+          "text": "A Professional Services engagement"
+        },
+        {
+          "id": "B",
+          "text": "Data Extensions created in Contact Builder"
+        },
+        {
+          "id": "C",
+          "text": "Separate keys for each Business Unit"
+        },
+        {
+          "id": "D",
+          "text": "A dedicated IP"
+        },
+        {
+          "id": "E",
+          "text": "A new account in a separate tenant"
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "FLE wymaga Professional Services, DE z Contact Builder i osobnych kluczy per BU. Nowe konto w osobnym tenancie to wymóg Tokenized Sending.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-cp-01",
+      "section": "digital-marketing-proficiency",
+      "topic": "cloudpages-api",
+      "type": "scenario",
+      "question": "A CloudPage receives a subscriber identifier through URL parameters. The security team wants these parameters protected. What should the administrator recommend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Encode the parameters with Base64"
+        },
+        {
+          "id": "B",
+          "text": "Encrypt the parameters using MicrositeURL"
+        },
+        {
+          "id": "C",
+          "text": "Serve the page over HTTP instead of HTTPS"
+        },
+        {
+          "id": "D",
+          "text": "Validate the parameters only in the browser"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Parametry CloudPages szyfrujesz przez MicrositeURL. Base64 to tylko kodowanie, a nie zabezpieczenie.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-cp-02",
+      "section": "digital-marketing-proficiency",
+      "topic": "cloudpages-api",
+      "type": "multi",
+      "question": "Which THREE are security best practices for CloudPages? (Choose 3)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Use SSL"
+        },
+        {
+          "id": "B",
+          "text": "Validate input on the server side"
+        },
+        {
+          "id": "C",
+          "text": "Add security headers"
+        },
+        {
+          "id": "D",
+          "text": "Base64-encode URL parameters"
+        },
+        {
+          "id": "E",
+          "text": "Rely only on client-side validation"
+        }
+      ],
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "CloudPages zabezpieczasz przez SSL, walidację po stronie serwera i security headers. Base64 nie szyfruje, a samą walidację w przeglądarce łatwo obejść.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-cp-03",
+      "section": "digital-marketing-proficiency",
+      "topic": "cloudpages-api",
+      "type": "truefalse",
+      "question": "Base64-encoding URL parameters is an adequate way to protect sensitive values passed to a CloudPage.",
+      "options": [
+        {
+          "id": "T",
+          "text": "True"
+        },
+        {
+          "id": "F",
+          "text": "False"
+        }
+      ],
+      "correct": "F",
+      "explanation": "Nie: parametry szyfrujesz przez MicrositeURL, a nie przez Base64.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-cp-04",
+      "section": "digital-marketing-proficiency",
+      "topic": "cloudpages-api",
+      "type": "scenario",
+      "question": "A developer building an API integration with Marketing Cloud Engagement asks for every available permission \"just in case\". What should the administrator do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Grant only the permissions the integration needs"
+        },
+        {
+          "id": "B",
+          "text": "Grant all permissions to avoid future errors"
+        },
+        {
+          "id": "C",
+          "text": "Share an administrator's username and password"
+        },
+        {
+          "id": "D",
+          "text": "Disable Multi-Factor Authentication for the integration"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Integracje API konfigurujesz według zasady least privilege, czyli tylko z uprawnieniami, których naprawdę potrzebują.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-cp-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "cloudpages-api",
+      "type": "single",
+      "question": "According to API integration best practice, which credential should be kept on the integration's server?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only the refresh token"
+        },
+        {
+          "id": "B",
+          "text": "An administrator's username and password"
+        },
+        {
+          "id": "C",
+          "text": "All tokens, embedded in CloudPage URLs"
+        },
+        {
+          "id": "D",
+          "text": "No credentials; tokens are stored in the browser"
+        }
+      ],
+      "correct": "A",
+      "explanation": "Dobra praktyka integracji: na serwerze trzymasz tylko refresh token.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-tok-05",
+      "section": "digital-marketing-proficiency",
+      "topic": "tokenized-sending",
+      "type": "scenario",
+      "question": "A company with an existing Marketing Cloud Engagement account wants to start using Tokenized Sending for its current Business Units. What should the administrator explain?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tokenized Sending is enabled with a checkbox in Security Settings"
+        },
+        {
+          "id": "B",
+          "text": "Tokenized Sending requires a new account in a separate tenant"
+        },
+        {
+          "id": "C",
+          "text": "Field-Level Encryption must be enabled first"
+        },
+        {
+          "id": "D",
+          "text": "Advanced Audit Trail must be purchased first"
+        }
+      ],
+      "correct": "B",
+      "explanation": "Tokenized Sending wymaga nowego konta w osobnym tenancie. Nie włączysz go na obecnym koncie.",
+      "source": "security-deep-dive.md"
+    },
+    {
+      "id": "q-tok-06",
+      "section": "digital-marketing-proficiency",
+      "topic": "tokenized-sending",
+      "type": "multi",
+      "question": "Which TWO statements about Tokenized Sending are correct? (Choose 2)",
+      "options": [
+        {
+          "id": "A",
+          "text": "The customer's resolver is called over HTTPS on port 443"
+        },
+        {
+          "id": "B",
+          "text": "Tokens are exchanged for clear data in memory at send time"
+        },
+        {
+          "id": "C",
+          "text": "Clear data is cached in a Data Extension for 30 days"
+        },
+        {
+          "id": "D",
+          "text": "The resolver is called over unencrypted HTTP on port 80"
+        }
+      ],
+      "correct": [
+        "A",
+        "B"
+      ],
+      "explanation": "Resolver po Twojej stronie działa po HTTPS 443, a token zamieniany jest na dane w pamięci w chwili wysyłki. Dane nie są zapisywane w SFMC.",
+      "source": "security-deep-dive.md"
+    }
+  ]
+}

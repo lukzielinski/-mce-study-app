@@ -1,0 +1,1016 @@
+{
+  "version": 1,
+  "subtopics": [
+    {
+      "id": "dmp-governance",
+      "section": "digital-marketing-proficiency",
+      "name": "Describe governance and compliance in relation to digital marketing",
+      "source": "governance-compliance-security.md"
+    },
+    {
+      "id": "dmp-security",
+      "section": "digital-marketing-proficiency",
+      "name": "Recognize security best practices for data, permissions, and PII",
+      "source": "governance-compliance-security.md"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "can-spam",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-governance",
+      "title": "Governance, compliance i CAN-SPAM",
+      "icon": "⚖️",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Governance vs compliance",
+          "body": "**Governance** to wewnętrzne zasady prowadzenia marketingu w firmie.\n\n**Compliance** to przestrzeganie prawa. W USA chodzi przede wszystkim o **CAN-SPAM Act**.\n\nRazem chronią zaufanie klientów i reputację nadawcy.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "steps",
+          "title": "Wymogi CAN-SPAM dla commercial email",
+          "items": [
+            "Header (From, Reply-to) uczciwie identyfikuje nadawcę.",
+            "Subject line odpowiada treści maila.",
+            "Mail jest oznaczony jako reklama, chyba że masz opt-in.",
+            "Jest fizyczny adres pocztowy nadawcy. W SFMC stopka i adres są w **Delivery Profile**.",
+            "Jest działający opt-out."
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Opt-out mechanism: liczby",
+          "headers": [
+            "Wymóg",
+            "Wartość"
+          ],
+          "rows": [
+            [
+              "Forma",
+              "Link unsubscribe albo preference center"
+            ],
+            [
+              "Łatwość",
+              "Bez logowania, max 1 strona"
+            ],
+            [
+              "Jak długo działa link",
+              "Min. 30 dni po wysyłce"
+            ],
+            [
+              "Realizacja wypisu",
+              "W ciągu 10 dni (w ustawie: dni robocze)"
+            ]
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "Wypis wymaga logowania albo kilku stron → **narusza CAN-SPAM**.\n\nNie myl liczb: **10 dni** to czas na realizację wypisu, a **30 dni** to minimalny czas działania linku opt-out.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-canspam-01",
+        "q-canspam-02",
+        "q-canspam-03",
+        "q-canspam-04",
+        "q-canspam-05"
+      ]
+    },
+    {
+      "id": "commercial-vs-transactional",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-governance",
+      "title": "Commercial vs transactional email",
+      "icon": "📧",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Transactional email",
+          "body": "Przykłady: potwierdzenie zamówienia, reset hasła.\n\nJest **zwolniony z większości CAN-SPAM**. Zostaje tylko jeden wymóg: **accurate sender identification**.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Porównanie wymogów CAN-SPAM",
+          "headers": [
+            "Wymóg",
+            "Commercial",
+            "Transactional"
+          ],
+          "rows": [
+            [
+              "Uczciwy header (sender identification)",
+              "Tak",
+              "Tak"
+            ],
+            [
+              "Temat zgodny z treścią",
+              "Tak",
+              "Nie"
+            ],
+            [
+              "Adres fizyczny",
+              "Tak",
+              "Nie"
+            ],
+            [
+              "Opt-out",
+              "Tak",
+              "Nie"
+            ]
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "„Który wymóg CAN-SPAM dotyczy też maili transakcyjnych?” → **tylko accurate sender identification**. Nie unsubscribe i nie adres fizyczny.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-trans-01",
+        "q-trans-02",
+        "q-trans-03"
+      ]
+    },
+    {
+      "id": "opt-in",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-governance",
+      "title": "Explicit opt-in i Double Opt-In",
+      "icon": "✅",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Explicit opt-in",
+          "body": "Bezpośrednia, świadoma zgoda klienta, np. przez formularz.\n\nTo **jedyna prawidłowa podstawa wysyłki marketingowej**. Checkbox zgody **nie może być pre-checked**.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "steps",
+          "title": "Proces opt-in (Confirmed / Double Opt-In, COI)",
+          "items": [
+            "Klient sam wypełnia formularz, a checkbox zgody nie jest domyślnie zaznaczony.",
+            "Dostaje maila z prośbą o potwierdzenie.",
+            "Dopiero po kliknięciu trafia na listę wysyłkową."
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "explain",
+          "title": "Po co Double Opt-In?",
+          "body": "- weryfikuje właściciela adresu\n- czyści bazę\n- podnosi engagement i ROI\n- blokuje boty",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "„Kupiliśmy / wynajęliśmy listę od partnera” → to **nie jest explicit opt-in**. Nie wysyłasz, bo rośnie ryzyko honeypotów.\n\nCheckbox zgody domyślnie zaznaczony → zła praktyka, a nie prawidłowy opt-in.\n\nDouble opt-in to best practice, a **nie wymóg CAN-SPAM**.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-optin-01",
+        "q-optin-02",
+        "q-optin-03",
+        "q-optin-04"
+      ]
+    },
+    {
+      "id": "spam-traps",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-governance",
+      "title": "Spam traps",
+      "icon": "🪤",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Dwa rodzaje pułapek",
+          "body": "**Honeypot**: adres stworzony tylko po to, by łapać spamerów. Trafienie oznacza kupioną albo zescrapowaną listę.\n\n**Recycled trap**: porzucony adres, który po 6–12 mies. nieaktywności stał się pułapką. Trafienie oznacza złą list hygiene, bo wysyłasz do martwych adresów.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Honeypot vs recycled spam trap",
+          "headers": [
+            "",
+            "Honeypot",
+            "Recycled trap"
+          ],
+          "rows": [
+            [
+              "Pochodzenie",
+              "Nigdy nie należał do człowieka",
+              "Prawdziwy adres porzucony na 6–12 mies."
+            ],
+            [
+              "Co zdradza",
+              "Kupiona lub zescrapowana lista",
+              "Brak czyszczenia listy"
+            ],
+            [
+              "Lekarstwo",
+              "Tylko explicit opt-in, nigdy kupionych list",
+              "List hygiene, usuwanie nieaktywnych"
+            ]
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "Wzrost spam trap hits po wysyłce do starej, uśpionej bazy → **recycled traps** i zła list hygiene.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "mnemonic",
+          "body": "**Honeypot = miodek dla złodzieja**: łapie tych, którzy kradną lub kupują adresy.\n\n**Recycled = zombie**: martwy adres, który wrócił jako pułapka.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-trap-01",
+        "q-trap-02",
+        "q-trap-03",
+        "q-trap-04"
+      ]
+    },
+    {
+      "id": "list-hygiene",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-governance",
+      "title": "List hygiene i monitoring dostarczalności",
+      "icon": "🧹",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "List hygiene",
+          "body": "Regularne czyszczenie listy: usuwanie **hard bounce’ów**, nieaktywnych i skarżących się.\n\nMetryki (skargi, unsubscribe, hard bounce) przeglądasz **co 3–6 miesięcy**.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "explain",
+          "title": "Skargi: Data View _Complaint",
+          "body": "**_Complaint** to tabela systemowa ze skargami na spam. Odpytujesz ją SQL-em w **Query Activity**.\n\nOsobę skarżącą się:\n- wypisujesz z listy lub ze wszystkich list,\n- oznaczasz **Do Not Email**,\n- albo usuwasz rekord.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "🔢 Liczby do zapamiętania",
+          "headers": [
+            "Liczba",
+            "Dotyczy"
+          ],
+          "rows": [
+            [
+              "< 2%",
+              "Docelowy bounce rate. Hard bounce usuwasz natychmiast"
+            ],
+            [
+              "≤ 0,1%",
+              "Docelowy poziom spam complaints"
+            ],
+            [
+              "2× w roku",
+              "Minimalna częstotliwość usuwania stale data"
+            ],
+            [
+              "2 lata + 6 mies.",
+              "Stale = rekord starszy niż 2 lata i brak zaangażowania od 6 mies."
+            ],
+            [
+              "co 3–6 mies.",
+              "Przegląd metryk dostarczalności"
+            ]
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "explain",
+          "title": "Inne działania",
+          "body": "- sprawdź jakość treści i aktualność zgód\n- testuj godziny wysyłki: **Einstein Send Time Optimization** (AI wybiera najlepszą godzinę dla odbiorcy, co poprawia zaangażowanie i zmniejsza liczbę negatywnych reakcji)\n- personalizuj\n- co jakiś czas wysyłaj prośbę o aktualizację preferencji",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "„Gdzie sprawdzić, kto zgłosił spam?” → **Data View _Complaint**.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "mnemonic",
+          "body": "**Liczby „2”**: bounce < 2%, czyszczenie 2× w roku, stale = 2 lata (+6 mies. bez zaangażowania).",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "scenario",
+          "title": "Maile lądują w spamie",
+          "problem": "Po kampanii „reaktywacyjnej” do bazy sprzed 3 lat Gmail zaczął odrzucać maile, a spam complaints wzrosły do 0,4%.",
+          "cause": "Stare, nieaktywne adresy, wśród nich recycled spam traps. Skargi są 4× powyżej progu 0,1%.",
+          "solution": "Sprawdź _Complaint i wypisz skarżących się. Usuń stale data (starsze niż 2 lata i bez zaangażowania od 6 mies.). Wróć do wysyłek od najbardziej zaangażowanych, jak przy warmingu.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-hyg-01",
+        "q-hyg-02",
+        "q-hyg-04",
+        "q-hyg-05",
+        "q-hyg-06"
+      ]
+    },
+    {
+      "id": "shared-vs-dedicated-ip",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-governance",
+      "title": "Shared vs Dedicated IP",
+      "icon": "🌐",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Dwa modele wysyłki",
+          "body": "**Shared IP**: IP współdzielone z innymi klientami Salesforce. Dla małego wolumenu.\n\n**Dedicated IP**: własne IP. Dla bardzo dużego wolumenu, z pełną kontrolą nad reputacją. Zamawiasz je przez **account executive**.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Porównanie",
+          "headers": [
+            "",
+            "Shared IP",
+            "Dedicated IP"
+          ],
+          "rows": [
+            [
+              "Dla kogo",
+              "Mały wolumen",
+              "Bardzo duży wolumen"
+            ],
+            [
+              "Reputacja",
+              "Wspólna z innymi",
+              "W pełni Twoja"
+            ],
+            [
+              "Ryzyko",
+              "Salesforce może zawiesić konto",
+              "Szkodzisz tylko sobie"
+            ],
+            [
+              "Warming",
+              "Wymagany",
+              "Wymagany"
+            ]
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "Warming jest **wymagany w obu przypadkach**. Własne IP nie zwalnia z warmingu.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-ip-01",
+        "q-ip-02",
+        "q-ip-03"
+      ]
+    },
+    {
+      "id": "warming",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-governance",
+      "title": "Warming",
+      "icon": "🔥",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Co to jest warming?",
+          "body": "Stopniowe budowanie reputacji **nowego IP lub domeny**.\n\nKiedy: nowa marka, nowe ESP, dedicated IP.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "steps",
+          "title": "Warming krok po kroku",
+          "items": [
+            "Wybierz najbardziej zaangażowanych: nowe zapisy i kliknięcia z ostatnich **30 dni**.",
+            "Wysyłaj małe paczki tylko do nich.",
+            "Zwiększaj wolumen o **~20% dziennie**.",
+            "Przy **~70% bazy** dziennie przejdź na pełną bazę.",
+            "Spadek zaangażowania, throttling albo blokady: **zatrzymaj się na obecnym wolumenie**, wznów po stabilizacji metryk."
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "Migracja z innego ESP i od razu 2 mln maili → złe podejście. Najpierw warming od najbardziej zaangażowanych.\n\nThrottling w trakcie warmingu → zatrzymaj się na obecnym wolumenie. **Nie zwiększaj** i nie wysyłaj do wszystkich.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "mnemonic",
+          "body": "**Warming jak siłownia**: zaczynasz od małego ciężaru (najbardziej zaangażowani), dokładasz ~20% dziennie, a przy kontuzji (throttling) nie dokładasz, tylko czekasz.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-warm-01",
+        "q-warm-02",
+        "q-warm-03",
+        "q-warm-04",
+        "q-warm-05"
+      ]
+    },
+    {
+      "id": "security-settings",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-security",
+      "title": "Security Settings",
+      "icon": "🔐",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Gdzie?",
+          "body": "**Setup → Security → Security Settings**. Ustawienia są podzielone na trzy grupy: Session Settings, Username and Logins i Password Policies.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Grupy ustawień",
+          "headers": [
+            "Grupa",
+            "Ustawienia"
+          ],
+          "rows": [
+            [
+              "Session Settings",
+              "Session Timeout (15 min–8 h, zalecane 20 min), Require Secure Connections (https)"
+            ],
+            [
+              "Username and Logins",
+              "Login Expires After Inactivity, Invalid Logins Before Lockout, Minimum Username Length, Restrict Logins by IP Address (np. Log Violations & Deny Access), IP Allowlisting List Source (np. Defined at Business Unit level), Enable Username and Password for Web Services"
+            ],
+            [
+              "Password Policies",
+              "Minimum Password Length, Password Complexity, Enforce Password History, User Passwords Expire In, Exclude API Users / Exclude FTP Users From Password Expiration, Send Password Change Confirmation Email"
+            ]
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "explain",
+          "title": "Po co to wszystko?",
+          "body": "- **Session Timeout**: chroni porzucone sesje.\n- **Invalid Logins Before Lockout**: blokuje konto po X błędnych hasłach, chroni przed brute force.\n- **Password Policies**: wymuszają silne hasła. **Exclude API / FTP Users From Password Expiration** chroni integracje.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "warning",
+          "body": "W menu Security jest też osobna strona **Domain Allowlist**, ale w materiale nie jest opisana. Sprawdź ją w dokumentacji Salesforce.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "Po wymuszeniu wygasania haseł padła integracja → **Exclude API Users From Password Expiration**.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-sec-01",
+        "q-sec-02",
+        "q-sec-03",
+        "q-sec-04",
+        "q-sec-05"
+      ]
+    },
+    {
+      "id": "security-values-bu",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-security",
+      "title": "Zalecane wartości i dziedziczenie w BU",
+      "icon": "📏",
+      "source": "security-deep-dive.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Konkretne liczby",
+          "body": "Security Settings mają **konkretne zalecane wartości**. Na egzaminie warto je znać na pamięć. Ta część dotyczy też działu **Setup**.",
+          "source": "security-deep-dive.md"
+        },
+        {
+          "type": "table",
+          "title": "Zalecane wartości",
+          "headers": [
+            "Ustawienie",
+            "Zalecana wartość"
+          ],
+          "rows": [
+            [
+              "Session Timeout",
+              "20 min"
+            ],
+            [
+              "Invalid Logins Before Lockout",
+              "3 próby"
+            ],
+            [
+              "Minimum Password Length",
+              "≥ 8 znaków"
+            ],
+            [
+              "Enforce Password History",
+              "≥ 8"
+            ],
+            [
+              "User Passwords Expire In",
+              "90 dni"
+            ]
+          ],
+          "source": "security-deep-dive.md"
+        },
+        {
+          "type": "explain",
+          "title": "Dziedziczenie w Business Unit",
+          "body": "Nowy **Business Unit dziedziczy** ustawienia od rodzica.\n\nAle **pierwsza zmiana w BU zrywa dziedziczenie na zawsze**. Od tej chwili zmiany u rodzica nie trafiają do tego BU.",
+          "source": "security-deep-dive.md"
+        },
+        {
+          "type": "trap",
+          "body": "„Zmieniłem jedno ustawienie w child BU, a nowe ustawienia rodzica się nie pojawiają” → **pierwsza zmiana zerwała dziedziczenie** i to na zawsze.\n\nNie myl liczb: hasło **≥ 8 znaków** i history **≥ 8**, lockout po **3** próbach, wygasanie po **90 dniach**, timeout **20 min**.",
+          "source": "security-deep-dive.md"
+        }
+      ],
+      "checks": [
+        "q-sv-01",
+        "q-sv-02",
+        "q-sv-03",
+        "q-sv-04",
+        "q-sv-05"
+      ]
+    },
+    {
+      "id": "mfa-allowlists",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-security",
+      "title": "MFA i Allowlisty",
+      "icon": "🛂",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Multi-Factor Authentication (MFA)",
+          "body": "Drugi składnik logowania. Chroni przed **phishing**, **credential stuffing** i **account takeover**.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "explain",
+          "title": "Login IP Allowlist",
+          "body": "Logowanie tylko z zakresów IP firmy. Dotyczy **UI i API**, więc chroni też przed malicious API attacks.\n\nPróba spoza listy kończy się **odmową i wpisem w logu**.\n\nNa stronie definiujesz zakresy Start IP–End IP, opis i Login Source. Jest tam przycisk **View Access Log**. Lista automatycznie zawiera IP Salesforce.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "explain",
+          "title": "Export Email Allowlist",
+          "body": "Eksporty idą tylko na wskazane maile i domeny. Dzięki temu subscriber exports i eksporty z tracking pages nie wyciekną na prywatne skrzynki.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Który Allowlist?",
+          "headers": [
+            "Allowlist",
+            "Kontroluje"
+          ],
+          "rows": [
+            [
+              "Login IP Allowlist",
+              "Skąd (z jakiego IP) można się zalogować do UI i API"
+            ],
+            [
+              "Export Email Allowlist",
+              "Dokąd (na jakie maile i domeny) trafiają eksporty danych"
+            ]
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Które zabezpieczenie logowania?",
+          "headers": [
+            "Zagrożenie",
+            "Ustawienie"
+          ],
+          "rows": [
+            [
+              "Wykradzione lub wyciekłe hasło (phishing, credential stuffing)",
+              "MFA"
+            ],
+            [
+              "Zgadywanie haseł",
+              "Lockout + MFA"
+            ],
+            [
+              "Logowanie spoza firmy, ataki na API",
+              "Login IP Allowlist"
+            ],
+            [
+              "Otwarta sesja na wspólnym komputerze",
+              "Session Timeout"
+            ],
+            [
+              "Kto zmienił uprawnienia lub ustawienia?",
+              "Audit Trail"
+            ]
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "„Logowanie tylko z biura” → **Login IP Allowlist**, nie MFA.\n\n„Eksporty tylko do pracowników firmy” → **Export Email Allowlist**, nie Login IP Allowlist.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "mnemonic",
+          "body": "**Allowlisty: „skąd i dokąd”**. Login IP = skąd się logujesz, Export Email = dokąd idą dane.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-allow-01",
+        "q-allow-02",
+        "q-allow-03",
+        "q-allow-04",
+        "q-allow-05"
+      ]
+    },
+    {
+      "id": "audit-trail",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-security",
+      "title": "Audit Trail",
+      "icon": "🕵️",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Co to jest Audit Trail?",
+          "body": "Log dostępów i zmian w koncie. Rejestruje:\n- logowania i IP\n- zmiany userów\n- zmiany ról i uprawnień\n- zmiany security settings",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "explain",
+          "title": "Jak pobrać dane?",
+          "body": "Przez **Automation Studio** albo **REST API**.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "„Kto zmienił uprawnienia lub ustawienia?” → **Audit Trail**.\n\nNie myl z _Complaint: tam są skargi na spam, a nie zmiany w koncie.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Audit Trail: basic vs advanced",
+          "headers": [
+            "",
+            "Basic",
+            "Advanced"
+          ],
+          "rows": [
+            [
+              "Dostępność",
+              "Dla wszystkich, trzeba włączyć checkboxem",
+              "Kupujesz przez account executive"
+            ],
+            [
+              "Co daje",
+              "30 dni danych",
+              "Zmiany treści i danych, session ID, BU"
+            ]
+          ],
+          "source": "security-deep-dive.md"
+        },
+        {
+          "type": "trap",
+          "body": "Audit Trail jest pusty → basic trzeba **włączyć checkboxem**.\n\nPotrzebne zmiany treści i danych, session ID albo BU → **Advanced**, kupowany przez account executive.",
+          "source": "security-deep-dive.md"
+        }
+      ],
+      "checks": [
+        "q-audit-01",
+        "q-audit-02",
+        "q-audit-03",
+        "q-audit-04",
+        "q-audit-05"
+      ]
+    },
+    {
+      "id": "roles-deny",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-security",
+      "title": "Roles i Deny",
+      "icon": "🚫",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Roles",
+          "body": "Role to zestawy uprawnień. Zasada **1 + 1**: jedna standardowa rola **Marketing Cloud** i jedna standardowa rola **Email Studio** na usera.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "explain",
+          "title": "Deny permission",
+          "body": "Jawny zakaz dostępu do funkcji. **Wygrywa z każdym Allow**.\n\nRozwiązanie: usuń rolę z Deny.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "User dostał rolę z Allow, a dalej nie widzi funkcji → inna jego rola ma **Deny**. Usuń tę rolę, a nie dokładaj kolejnych.\n\n„Nadałem wszystkie role, a funkcje zniknęły” → konflikt ról. Zostaw 1 rolę MC + 1 rolę Email Studio.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "mnemonic",
+          "body": "**Deny = weto**: jedno „nie” blokuje wszystkie „tak”.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "scenario",
+          "title": "User nie widzi Automation Studio",
+          "problem": "Analityk dostał rolę z dostępem do Automation Studio, ale narzędzie dalej się nie pokazuje.",
+          "cause": "Inna przypisana mu rola ma Deny na tej funkcji, a Deny wygrywa z Allow.",
+          "solution": "Usuń rolę z Deny. Zostaw 1 standardową rolę MC + 1 rolę Email Studio.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-role-01",
+        "q-role-02",
+        "q-role-03",
+        "q-role-04"
+      ]
+    },
+    {
+      "id": "data-encryption",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-security",
+      "title": "Szyfrowanie danych",
+      "icon": "🔒",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Trzy sposoby szyfrowania",
+          "body": "**Field-Level Encryption**: szyfrowanie at rest wybranych pól w Data Extensions. Stosujesz ze względu na polityki prywatności, regulacje i umowy.\n\n**Data at Rest Encryption**: szyfrowanie plików w systemie plików (I/O). Chroni całą bazę bez zmian w funkcjach aplikacji.\n\n**AMPscript encryption**: EncryptSymmetric() / DecryptSymmetric() + klucze. Szyfruje wartości w email sends i file transfer activities.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Która metoda ochrony danych?",
+          "headers": [
+            "Potrzeba w scenariuszu",
+            "Odpowiedź"
+          ],
+          "rows": [
+            [
+              "Dane mają być w SFMC, ale wybrane kolumny DE zaszyfrowane",
+              "Field-Level Encryption"
+            ],
+            [
+              "Zabezpieczenie plików całej bazy, bez zmian w pracy userów",
+              "Data at Rest Encryption"
+            ],
+            [
+              "Danych (PII / PHI) nie wolno trzymać w SFMC",
+              "Tokenized Sending"
+            ],
+            [
+              "Zaszyfrowana wartość w mailu, linku albo przy transferze pliku",
+              "AMPscript + klucz"
+            ]
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "„Nie wolno przechowywać danych poza naszym systemem” → **Tokenized Sending**. Field-Level Encryption to pułapka, bo dane nadal leżą w SFMC.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Szczegóły: Data at Rest vs Field-Level",
+          "headers": [
+            "",
+            "Data at Rest",
+            "Field-Level Encryption"
+          ],
+          "rows": [
+            [
+              "Technika / wymagania",
+              "AES-256, przezroczysty dla aplikacji",
+              "Professional Services, DE z Contact Builder, osobne klucze per BU"
+            ],
+            [
+              "Uwaga",
+              "Nie obejmuje Predictive Intelligence i Audience Builder",
+              "—"
+            ]
+          ],
+          "source": "security-deep-dive.md"
+        },
+        {
+          "type": "trap",
+          "body": "„Data at Rest chroni wszystko” → **nie obejmuje Predictive Intelligence i Audience Builder**.",
+          "source": "security-deep-dive.md"
+        }
+      ],
+      "checks": [
+        "q-enc-01",
+        "q-enc-02",
+        "q-enc-03",
+        "q-enc-04",
+        "q-enc-07"
+      ]
+    },
+    {
+      "id": "encryption-keys",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-security",
+      "title": "Encryption keys (Key Management)",
+      "icon": "🗝️",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Key Management",
+          "body": "**Setup → Data Management → Key Management**. Tu tworzysz i trzymasz klucze.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "table",
+          "title": "Typy kluczy",
+          "headers": [
+            "Typ",
+            "Wymaga",
+            "Do czego"
+          ],
+          "rows": [
+            [
+              "Asymmetric",
+              "Upload certyfikatu",
+              "Szyfrowanie i odszyfrowywanie, cyfrowy podpis maili (np. pliki PGP w File Transfer Activity)"
+            ],
+            [
+              "Symmetric",
+              "Passphrase",
+              "Szyfrowanie i odszyfrowywanie, cyfrowy podpis maili (AMPscript)"
+            ],
+            [
+              "Salt",
+              "Wartość hex",
+              "JWT dla custom Journey Builder activities"
+            ],
+            [
+              "SSH",
+              "Upload certyfikatu",
+              "Uwierzytelnianie SFTP"
+            ],
+            [
+              "Initialization Vector",
+              "Wartość 16-„bitowa” ⚠️ (technicznie raczej bajty)",
+              "Field-level encryption"
+            ],
+            [
+              "SSO Metadata",
+              "Metadane dostawcy SSO",
+              "Single Sign-On"
+            ]
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "warning",
+          "body": "Długość wartości Initialization Vector jest w notatce opisana jako 16-„bitowa”, z dopiskiem, że technicznie chodzi raczej o bajty. Sprawdź to w dokumentacji.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "JWT dla custom activity = **Salt**, SFTP = **SSH**, SSO = **SSO Metadata**, field-level encryption = **Initialization Vector**.\n\nCertyfikat wymagają **Asymmetric i SSH**, passphrase wymaga **Symmetric**.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "mnemonic",
+          "body": "**„Asy Są Silne, Szybkie, I Sprytne”**: Asymmetric, Symmetric, Salt, SSH, Initialization Vector, SSO Metadata.\n\nDo czego klucz: Salt = JWT, SSH = SFTP, SSO Metadata = SSO, IV = field-level, Symmetric = passphrase, Asymmetric = certyfikat.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-key-01",
+        "q-key-02",
+        "q-key-03",
+        "q-key-04",
+        "q-key-05"
+      ]
+    },
+    {
+      "id": "tokenized-sending",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-security",
+      "title": "Tokenized Sending",
+      "icon": "🎟️",
+      "source": "governance-compliance-security.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Kiedy?",
+          "body": "Gdy masz **PII / PHI, których nie wolno przechowywać w SFMC**. W SFMC jest tylko token, a prawdziwe dane SFMC pobiera przez API w chwili wysyłki.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "steps",
+          "title": "Jak to działa",
+          "items": [
+            "W SFMC zapisany jest jeden token na send attribute. Wygląda jak zwykły email albo numer telefonu.",
+            "User uruchamia wysyłkę.",
+            "SFMC wywołuje API do hurtowni danych klienta.",
+            "Tokeny są wymieniane na prawdziwe dane (clear data), mail wychodzi, a dane **nie są zapisywane w SFMC**."
+          ],
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "trap",
+          "body": "„Nie wolno przechowywać maili / danych medycznych poza naszym systemem” → **Tokenized Sending**. Field-Level Encryption to pułapka, bo dane nadal leżą w SFMC.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "explain",
+          "title": "Wymagania Tokenized Sending",
+          "body": "- **nowe konto** w **osobnym tenancie** (nie włączysz go na istniejącym koncie)\n- **Twój resolver** wywoływany po **HTTPS 443**\n- token zamieniany jest na dane **w pamięci** w chwili wysyłki",
+          "source": "security-deep-dive.md"
+        },
+        {
+          "type": "mnemonic",
+          "body": "**Tokenized Sending = szatnia**: w SFMC leży numerek (token), a kurtkę (prawdziwe dane) wydaje hurtownia klienta tylko w chwili wysyłki.",
+          "source": "governance-compliance-security.md"
+        },
+        {
+          "type": "scenario",
+          "title": "Szpital chce wysyłać przypomnienia o wizytach",
+          "problem": "Regulacje zabraniają przechowywania danych pacjentów (PHI) i ich adresów w zewnętrznym systemie.",
+          "cause": "Field-Level Encryption nie wystarczy, bo dane nadal byłyby w SFMC.",
+          "solution": "Tokenized Sending. W SFMC są tylko tokeny, a prawdziwe dane SFMC pobiera przez API z hurtowni szpitala w chwili wysyłki.",
+          "source": "governance-compliance-security.md"
+        }
+      ],
+      "checks": [
+        "q-tok-01",
+        "q-tok-02",
+        "q-tok-03",
+        "q-tok-04",
+        "q-tok-05"
+      ]
+    },
+    {
+      "id": "cloudpages-api",
+      "section": "digital-marketing-proficiency",
+      "subtopic": "dmp-security",
+      "title": "CloudPages i integracje API",
+      "icon": "🌍",
+      "source": "security-deep-dive.md",
+      "cards": [
+        {
+          "type": "explain",
+          "title": "Bezpieczne CloudPages",
+          "body": "- **SSL**\n- **szyfrowanie parametrów** przez **MicrositeURL** (nie Base64)\n- **walidacja po stronie serwera**\n- **security headers**",
+          "source": "security-deep-dive.md"
+        },
+        {
+          "type": "trap",
+          "body": "„Zakodujemy parametry Base64” → to **nie jest** zabezpieczenie. Parametry szyfrujesz przez **MicrositeURL**.",
+          "source": "security-deep-dive.md"
+        },
+        {
+          "type": "explain",
+          "title": "Integracje API",
+          "body": "- **least privilege**: integracja dostaje tylko potrzebne uprawnienia\n- **na serwerze tylko refresh token**",
+          "source": "security-deep-dive.md"
+        }
+      ],
+      "checks": [
+        "q-cp-01",
+        "q-cp-02",
+        "q-cp-03",
+        "q-cp-04",
+        "q-cp-05"
+      ]
+    }
+  ]
+}
